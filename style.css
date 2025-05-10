@@ -60,7 +60,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #111;
+  background-color: #f3eeee;
   min-width: 200px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 999;
@@ -75,7 +75,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #333;
+  background-color: #7a7979;
 }
 
 .dropdown:hover .dropdown-content {
@@ -245,9 +245,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  background-color: #ece5e5; /* ou autre */
+  padding: 10px 20px;
   flex-wrap: wrap;
 }
 
@@ -258,37 +257,31 @@ body {
 }
 
 .logo-img {
-  height: 60px;
+  height: 60px; /* ajuste selon ton logo */
 }
 
 .logo-text h1 {
-  font-size: 1.8rem;
+  font-size: 24px;
   margin: 0;
-  color: #f5c518;
 }
 
 .logo-text p {
+  font-size: 12px;
   margin: 0;
-  font-size: 0.9rem;
-  color: #555;
 }
 
 .main-nav {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .main-nav a {
-  color: #333;
+  color: rgb(19, 18, 18);
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.main-nav a:hover {
-  color: #f5c518;
+  font-family:  'Montserrat', sans-serif;
+  padding: 10px;
 }
 
 .contact-block {
@@ -298,14 +291,14 @@ body {
   gap: 5px;
 }
 
-.book-btn {
-  background: #f5c518;
+.contact-block .book-btn {
+  background-color: #f5c518;
+  padding: 8px 16px;
   color: black;
-  padding: 6px 15px;
   text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
+  border-radius: 5px;
 }
+
 
 .book-btn:hover {
   background: #ffd700;
