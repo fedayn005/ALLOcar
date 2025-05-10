@@ -4,23 +4,17 @@
   <meta charset="UTF-8">
   <title>ALLO CAR - CAR RENTAL</title>
   <link rel="stylesheet" href="style.css"> 
-  
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MKK88L6N');
+  <link rel="icon" href="alloc.png" type="image/png">
+   <!-- Google Tag Manager -->
+ <!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W7G7W7WM');
   </script>
+  <!-- End Google Tag Manager -->
   <!-- End Google Tag Manager -->
 
   <!-- Google Analytics 4 -->
@@ -61,8 +55,28 @@
       a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-</head>
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq) return; n=f.fbq=function(){n.callMethod ?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq) f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0';
+      n.queue=[]; t=b.createElement(e); t.async=!0;
+      t.src=v; s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '257290683663297');  // Remplacez cet ID par le vôtre
+    fbq('track', 'PageView');  // Suivi de la vue de page
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=257290683663297&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel (Facebook Ads) -->
 
+
+
+
+</head>
 
 <body>
 <header class="top-header">
@@ -73,12 +87,26 @@
       <p>RENT A CAR</p>
     </div>
   </div>
+
   <nav class="main-nav">
-    <a href="#all-cars">ALL CARS</a>
+    <div class="dropdown">
+      <a href="#all-cars" class="dropbtn">ALL CARS </a>
+      <div class="dropdown-content">
+        <a href="#mercedes"><img src="mercedes logo.png" alt="Mercedes" class="brand-icon"> Mercedes</a>
+        <a href="#porsche"><img src="porsche logo.png" alt="Porsche" class="brand-icon"> Porsche</a>
+        <a href="#lamborghini"><img src="lambo logo.png" alt="Lamborghini" class="brand-icon"> Lamborghini</a>
+        <a href="#aston"><img src="stonmartin logo.png" alt="Aston Martin" class="brand-icon"> Aston Martin</a>
+        <a href="#ferrari"><img src="ferrari logo.png" alt="Ferrari" class="brand-icon"> Ferrari</a>
+        <a href="#rolls"><img src="rolls log.png" alt="Rolls Royce" class="brand-icon"> Rolls Royce</a>
+        <a href="#bentley"><img src="bentley logo.png" alt="Bentley" class="brand-icon"> Bentley</a>
+      </div>
+    </div>
+
     <a href="#car-brands">CAR BRANDS</a>
     <a href="#">ABOUT US</a>
     <a href="contact.html">CONTACT US</a>
   </nav>
+
   <div class="contact-block">
     <div class="contact-item">📞 +212661567229</div>
     <div class="contact-item whatsapp">🟢 +212663320998</div>
@@ -86,21 +114,19 @@
   </div>
 </header>
 
-
- <section class="hero-section">
-    <div class="overlay">
-      <h1>Luxury Car Rental In Casablanca</h1>
-      <p>If you are the type of person who can spot a supercar a mile away,<br>
-         then <span class="highlight">AlloCar Luxury Rentals</span> will help you realize your dream.</p>
-      <a href="#car-brands" class="cb-button">Car Brands</a>
-    </div>
-  </section>
-
+<section class="hero-section">
+  <div class="overlay">
+    <h1>Luxury Car Rental In Casablanca</h1>
+    <p>If you are the type of person who can spot a supercar a mile away,<br>
+       then <span class="highlight">AlloCar Luxury Rentals</span> will help you realize your dream.</p>
+    <a href="#car-brands" class="cb-button">Car Brands</a>
+  </div>
+</section>
 
 <section class="our-brands" id="all-cars">
   <h2 class="brands-title">All Cars</h2>
-   <div class="brand-grid">
-    <div class="brand-box">
+  <div class="brand-grid">
+    <div class="brand-box" id="lamborghini">
       <img src="huracan.png" alt="Lamborghini">
       <p>Lamborghini Huracán</p>
     </div>
@@ -113,7 +139,7 @@
       <p>Lamborghini Urus</p>
     </div>
 
-    <div class="brand-box">
+    <div class="brand-box" id="porsche">
       <img src="gt3rs.png" alt="Porsche">
       <p>Porsche GT3RS</p>
     </div>
@@ -126,7 +152,7 @@
       <p>Porsche Cayenne Turbo S</p>
     </div>
 
-    <div class="brand-box">
+    <div class="brand-box" id="ferrari">
       <img src="488.png" alt="Ferrari">
       <p>Ferrari 488</p>
     </div>
@@ -143,12 +169,12 @@
       <p>Ferrari Roma</p>
     </div>
 
-    <div class="brand-box">
+    <div class="brand-box" id="rolls">
       <img src="ghost.png" alt="Rolls Royce">
       <p>Rolls Royce Ghost</p>
     </div>
 
-    <div class="brand-box">
+    <div class="brand-box" id="bentley">
       <img src="continental.png" alt="Bentley">
       <p>Bentley Continental</p>
     </div>
@@ -157,12 +183,12 @@
       <p>Bentley Bentayga</p>
     </div>
 
-    <div class="brand-box">
+    <div class="brand-box" id="aston">
       <img src="dbx.png" alt="Aston Martin">
       <p>Aston Martin DBX</p>
     </div>
 
-    <div class="brand-box">
+    <div class="brand-box" id="mercedes">
       <img src="g class.png" alt="Mercedes">
       <p>Mercedes G-Class</p>
     </div>
@@ -170,114 +196,86 @@
       <img src="s class.png" alt="Mercedes">
       <p>Mercedes S-Class</p>
     </div>
-
   </div>
 </section>
-
 
 <section id="car-brands" class="our-brands">
   <h2>Car Brands</h2>
   <div class="brands-container">
-    <div class="brand-card">
-      <img src="mercedes logo.png" alt="Mercedes">
-      
-    </div>
-    <div class="brand-card">
-      <img src="porsche logo.png" alt="Porsche">
-     
-    </div>
-    <div class="brand-card">
-      <img src="lambo logo.png" alt="Lamborghini">
-      
-    </div>
-
-    <div class="brand-card">
-      <img src="stonmartin logo.png" alt="Aston Martin">
-      
-    </div>
-    <div class="brand-card">
-      <img src="ferrari logo.png" alt="Ferrari">
-    </div>
-    <div class="brand-card">
-      <img src="rolls log.png" alt="Rolls Royce">
-    </div>
-    <div class="brand-card">
-      <img src="bentley logo.png" alt="Bentley">
-    </div>
-    
+    <div class="brand-card"><img src="mercedes logo.png" alt="Mercedes"></div>
+    <div class="brand-card"><img src="porsche logo.png" alt="Porsche"></div>
+    <div class="brand-card"><img src="lambo logo.png" alt="Lamborghini"></div>
+    <div class="brand-card"><img src="stonmartin logo.png" alt="Aston Martin"></div>
+    <div class="brand-card"><img src="ferrari logo.png" alt="Ferrari"></div>
+    <div class="brand-card"><img src="rolls log.png" alt="Rolls Royce"></div>
+    <div class="brand-card"><img src="bentley logo.png" alt="Bentley"></div>
   </div>
 </section>
 
-
-  
-  <div class="info-strip">
-    <div class="info-item">
-      <img src="No-deposit.png" alt="No deposit">
-      No Deposit Required - T&Cs apply
-    </div>
-    <div class="info-item">
-      <img src="lowest-price.png" alt="Best price">
-      Lowest Price in Casablanca
-    </div>
-    <div class="info-item">
-      <img src="car-icon.png" alt="Pickup">
-      Free Pick-Up & Drop-Off
-    </div>
+<div class="info-strip">
+  <div class="info-item">
+    <img src="No-deposit.png" alt="No deposit">
+    No Deposit Required - T&Cs apply
   </div>
-
-  <div class="floating whatsapp">
-    <img src="whatsapp-icon.png" alt="WhatsApp">
+  <div class="info-item">
+    <img src="lowest-price.png" alt="Best price">
+    Lowest Price in Casablanca
   </div>
+  <div class="info-item">
+    <img src="car-icon.png" alt="Pickup">
+    Free Pick-Up & Drop-Off
+  </div>
+</div>
 
+<div class="floating whatsapp">
+  <img src="whatsapp-icon.png" alt="WhatsApp">
+</div>
 
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="logo-section">
-          <h2 class="logo"><span class="key-icon">🔑</span> ALLO CAR<br><small>RENT A CAR</small></h2>
-          <ul class="footer-links">
-            <li><a href="#all-cars">Our Cars</a></li>
-            <li><a href="book.html">Book Now</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-    
-        <div class="contact-section">
-          <p><strong>📞 Mobile:</strong></p>
-          <p>+212 661567229</p>
-          <p>+212 663320998</p>
-        
-          <p><strong>📍 Address:</strong></p>
-          <p>39 Bd Zerktouni, Casablanca</p>
-    
-          <p><strong>🕒 Timing:</strong></p>
-          <p>24/7 service</p>
-        </div>
-
-        <div class="brands">
-          <strong>Brands:</strong>
-          Ferrari, Lamborghini, Bentley, Rolls Royce, Porsche, Mercedes, Land Rover, Audi, BMW, Cadillac,
-          McLaren, Jetour, Maserati
-        </div>
-
-        <div class="socials">
-          <a href="https://facebook.com"><img src="facebook pnj.png" alt="Facebook" /></a>
-          <a href="https://instagram.com"><img src="instagram.png" alt="Instagram" /></a>
-          <a href="https://youtube.com"><img src="yoitube.png" alt="YouTube" /></a>
-          <a href="https://tiktok.com"><img src="tiktok.png" alt="TikTok" /></a>
-        </div>
-
-        <div class="payments">
-          <img src="visaincon.png" alt="Visa" />
-          <img src="mastercard.png" alt="Mastercard" />
-          <img src="crypto.png" alt="Crypto" />
-        </div>
-
-        <p class="copyright">© Copyright 2025. All Rights Reserved</p>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="logo-section">
+        <h2 class="logo"><span class="key-icon">🔑</span> ALLO CAR<br><small>RENT A CAR</small></h2>
+        <ul class="footer-links">
+          <li><a href="#all-cars">Our Cars</a></li>
+          <li><a href="book.html">Book Now</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </div>
+
+      <div class="contact-section">
+        <p><strong>📞 Mobile:</strong></p>
+        <p>+212 661567229</p>
+        <p>+212 663320998</p>
+        <p><strong>📍 Address:</strong></p>
+        <p>39 Bd Zerktouni, Casablanca</p>
+        <p><strong>🕒 Timing:</strong></p>
+        <p>24/7 service</p>
+      </div>
+
+      <div class="brands">
+        <strong>Brands:</strong>
+        Ferrari, Lamborghini, Bentley, Rolls Royce, Porsche, Mercedes, Land Rover, Audi, BMW, Cadillac,
+        McLaren, Jetour, Maserati
+      </div>
+
+      <div class="socials">
+        <a href="https://facebook.com"><img src="facebook pnj.png" alt="Facebook" /></a>
+        <a href="https://instagram.com"><img src="instagram.png" alt="Instagram" /></a>
+        <a href="https://youtube.com"><img src="yoitube.png" alt="YouTube" /></a>
+        <a href="https://tiktok.com"><img src="tiktok.png" alt="TikTok" /></a>
+      </div>
+
+      <div class="payments">
+        <img src="visaincon.png" alt="Visa" />
+        <img src="mastercard.png" alt="Mastercard" />
+        <img src="crypto.png" alt="Crypto" />
+      </div>
+
+      <p class="copyright">© Copyright 2025. All Rights Reserved</p>
     </div>
-  </footer>
+  </div>
+</footer>
 
 </body>
 </html>
