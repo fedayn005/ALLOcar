@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Luxury Car | ALLO CAR</title>
+  <link rel="stylesheet" href="book.css" />
+</head>
+<body>
+
+  <div class="booking-container">
+    <h1>Book Your Luxury Car</h1>
+    <p>Fill in the details below and we will contact you to confirm your booking.</p>
+
+    <form class="booking-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Karim Lamrani" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="+212 666666666" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label for="car">Select Car</label>
+      <select id="car" required>
+        <option value="">-- Choose a Car --</option>
+        <option value="Lamborghini">Lamborghini Huracán</option>
+        <option value="Lamborghini">Lamborghini Aventador</option>
+        <option value="Lamborghini">Lamborghini Urus</option>
+        <option value="Porsche">Porsche GT3RS</option>
+        <option value="Porsche">Porsche 911</option>
+        <option value="Porsche">Porsche Cayenne Turbo S</option>
+        <option value="Ferrari">Ferrari 488</option>
+        <option value="Ferrari">Ferrari 812</option>
+        <option value="Ferrari">Ferrari California</option>
+        <option value="Ferrari">Ferrari Roma</option>
+        <option value="Rolls">Rolls Royce Ghost</option>
+        <option value="Bentley">Bentley Continental</option>
+        <option value="Bentley">Bentley Bentayga</option>
+        <option value="Aston Martin">Aston Martin DBX</option>
+        <option value="Mercedes">Mercedes G-Class</option>
+        <option value="Mercedes">Mercedes S-Class</option>
+      </select>
+
+      <label for="pickup">Pick-up Date</label>
+      <input type="date" id="pickup" required />
+
+      <label for="dropoff">Drop-off Date</label>
+      <input type="date" id="dropoff" required />
+
+      <label for="location">Pick-up Location</label>
+      <input type="text" id="location" placeholder="Aeroport Mohamed V" required />
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+</body>
+</html>
